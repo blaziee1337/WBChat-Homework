@@ -1,2 +1,4 @@
 ## HomeWork #2
-<img src="https://github.com/blaziee1337/WBTech_Homework/assets/154816989/e69978fb-cbb6-49f0-aad4-18a75dc78a5c" width="222" height="480">
+<img src="https://github.com/blaziee1337/WBChat-Homework/assets/154816989/f073930e-990b-4d6a-a4fa-6167292c8dfb" width="222" height="480">
+
+
