@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+enum Tabs: Hashable {
+    case contacts
+    case chats
+    case settings
+}
+
+final class Router: ObservableObject {
+    @Published var selectedTab: Tabs = .contacts
+}

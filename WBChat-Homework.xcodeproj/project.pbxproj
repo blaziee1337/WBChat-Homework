@@ -3,22 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		651C0E6B2C1CD2800041FDBD /* WBChat_HomeworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */; };
-		651C0E6D2C1CD2800041FDBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E6C2C1CD2800041FDBD /* ContentView.swift */; };
-		651C0E6F2C1CD2820041FDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651C0E6E2C1CD2820041FDBD /* Assets.xcassets */; };
 		651C0E722C1CD2820041FDBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651C0E712C1CD2820041FDBD /* Preview Assets.xcassets */; };
+		651C0E7F2C1CD7110041FDBD /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E7E2C1CD7110041FDBD /* WalkthroughView.swift */; };
+		651C0E812C1CD76A0041FDBD /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E802C1CD76A0041FDBD /* VerificationView.swift */; };
+		651C0E872C1CDB300041FDBD /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E862C1CDB300041FDBD /* MainTabView.swift */; };
+		651C0E8A2C1CDB9F0041FDBD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E892C1CDB9F0041FDBD /* Router.swift */; };
+		651C0E902C1CDC9E0041FDBD /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E8F2C1CDC9E0041FDBD /* ChatsView.swift */; };
+		651C0E922C1CDCAB0041FDBD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E912C1CDCAB0041FDBD /* SettingsView.swift */; };
+		651C0E942C1CDD320041FDBD /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E932C1CDD320041FDBD /* ContactsView.swift */; };
+		651C0E9A2C1CDEC70041FDBD /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E992C1CDEC70041FDBD /* ContactsModel.swift */; };
+		651C0E9C2C1CDF5C0041FDBD /* ContactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E9B2C1CDF5C0041FDBD /* ContactsDetailView.swift */; };
+		651C0E9D2C1CE06B0041FDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651C0E6E2C1CD2820041FDBD /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		651C0E672C1CD2800041FDBD /* WBChat-Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WBChat-Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBChat_HomeworkApp.swift; sourceTree = "<group>"; };
-		651C0E6C2C1CD2800041FDBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		651C0E6E2C1CD2820041FDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		651C0E712C1CD2820041FDBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		651C0E7E2C1CD7110041FDBD /* WalkthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughView.swift; sourceTree = "<group>"; };
+		651C0E802C1CD76A0041FDBD /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
+		651C0E862C1CDB300041FDBD /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		651C0E892C1CDB9F0041FDBD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		651C0E8F2C1CDC9E0041FDBD /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		651C0E912C1CDCAB0041FDBD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		651C0E932C1CDD320041FDBD /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		651C0E992C1CDEC70041FDBD /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
+		651C0E9B2C1CDF5C0041FDBD /* ContactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +67,14 @@
 		651C0E692C1CD2800041FDBD /* WBChat-Homework */ = {
 			isa = PBXGroup;
 			children = (
+				651C0E982C1CDE330041FDBD /* Model */,
+				651C0E7D2C1CD6BA0041FDBD /* OnBoardingFlow */,
+				651C0E852C1CDB100041FDBD /* MainTabView */,
+				651C0E952C1CDDED0041FDBD /* Contacts */,
+				651C0E972C1CDE000041FDBD /* Chats */,
+				651C0E962C1CDDF60041FDBD /* Settings */,
+				651C0E882C1CDB8F0041FDBD /* Services */,
 				651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */,
-				651C0E6C2C1CD2800041FDBD /* ContentView.swift */,
 				651C0E6E2C1CD2820041FDBD /* Assets.xcassets */,
 				651C0E702C1CD2820041FDBD /* Preview Content */,
 			);
@@ -65,6 +87,64 @@
 				651C0E712C1CD2820041FDBD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		651C0E7D2C1CD6BA0041FDBD /* OnBoardingFlow */ = {
+			isa = PBXGroup;
+			children = (
+				651C0E7E2C1CD7110041FDBD /* WalkthroughView.swift */,
+				651C0E802C1CD76A0041FDBD /* VerificationView.swift */,
+			);
+			path = OnBoardingFlow;
+			sourceTree = "<group>";
+		};
+		651C0E852C1CDB100041FDBD /* MainTabView */ = {
+			isa = PBXGroup;
+			children = (
+				651C0E862C1CDB300041FDBD /* MainTabView.swift */,
+			);
+			path = MainTabView;
+			sourceTree = "<group>";
+		};
+		651C0E882C1CDB8F0041FDBD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				651C0E892C1CDB9F0041FDBD /* Router.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		651C0E952C1CDDED0041FDBD /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				651C0E932C1CDD320041FDBD /* ContactsView.swift */,
+				651C0E9B2C1CDF5C0041FDBD /* ContactsDetailView.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		651C0E962C1CDDF60041FDBD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				651C0E912C1CDCAB0041FDBD /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		651C0E972C1CDE000041FDBD /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				651C0E8F2C1CDC9E0041FDBD /* ChatsView.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		651C0E982C1CDE330041FDBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				651C0E992C1CDEC70041FDBD /* ContactsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,7 +183,7 @@
 				};
 			};
 			buildConfigurationList = 651C0E622C1CD2800041FDBD /* Build configuration list for PBXProject "WBChat-Homework" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,8 +205,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				651C0E9D2C1CE06B0041FDBD /* Assets.xcassets in Resources */,
 				651C0E722C1CD2820041FDBD /* Preview Assets.xcassets in Resources */,
-				651C0E6F2C1CD2820041FDBD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +217,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				651C0E6D2C1CD2800041FDBD /* ContentView.swift in Sources */,
+				651C0E902C1CDC9E0041FDBD /* ChatsView.swift in Sources */,
+				651C0E9A2C1CDEC70041FDBD /* ContactsModel.swift in Sources */,
+				651C0E922C1CDCAB0041FDBD /* SettingsView.swift in Sources */,
+				651C0E812C1CD76A0041FDBD /* VerificationView.swift in Sources */,
 				651C0E6B2C1CD2800041FDBD /* WBChat_HomeworkApp.swift in Sources */,
+				651C0E8A2C1CDB9F0041FDBD /* Router.swift in Sources */,
+				651C0E9C2C1CDF5C0041FDBD /* ContactsDetailView.swift in Sources */,
+				651C0E7F2C1CD7110041FDBD /* WalkthroughView.swift in Sources */,
+				651C0E872C1CDB300041FDBD /* MainTabView.swift in Sources */,
+				651C0E942C1CDD320041FDBD /* ContactsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +367,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +396,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct WBChat_HomeworkApp: App {
+    @StateObject private var router: Router = .init()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
+                .environmentObject(router)
         }
     }
 }
