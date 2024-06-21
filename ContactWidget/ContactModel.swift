@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Contact {
+    let name: String
+    let phoneNumber: String
+    let avatar: String?
+}

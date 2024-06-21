@@ -12,6 +12,6 @@ import SwiftUI
 struct ContactWidgetBundle: WidgetBundle {
     var body: some Widget {
         ContactWidget()
-        ContactWidgetLiveActivity()
+        
     }
 }
