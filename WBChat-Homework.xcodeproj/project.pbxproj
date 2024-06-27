@@ -42,6 +42,8 @@
 		651C0FDE2C2603480041FDBD /* TimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0FDB2C2602B20041FDBD /* TimelineProvider.swift */; };
 		651C0FE12C26042B0041FDBD /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0F152C2338C70041FDBD /* ContactModel.swift */; };
 		651C0FE22C26046B0041FDBD /* ContactEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0FD82C2601170041FDBD /* ContactEntry.swift */; };
+		658DA0DA2C2DEFEF00CA1742 /* StringInterPolationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */; };
+		658DA0DC2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DA0DB2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		651C0FDB2C2602B20041FDBD /* TimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineProvider.swift; sourceTree = "<group>"; };
 		658DA0B42C2B136000CA1742 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		658DA0B62C2DBCEE00CA1742 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInterPolationView.swift; sourceTree = "<group>"; };
+		658DA0DB2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + StringInterPolation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 		651C0E692C1CD2800041FDBD /* WBChat-Homework */ = {
 			isa = PBXGroup;
 			children = (
+				658DA0D82C2DEFBB00CA1742 /* StringInterpolation */,
 				658DA0B52C2DBC7A00CA1742 /*  Factory */,
 				658DA0B32C2B133E00CA1742 /* Bank */,
 				651C0E982C1CDE330041FDBD /* Model */,
@@ -297,6 +302,15 @@
 			path = " Factory";
 			sourceTree = "<group>";
 		};
+		658DA0D82C2DEFBB00CA1742 /* StringInterpolation */ = {
+			isa = PBXGroup;
+			children = (
+				658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */,
+				658DA0DB2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift */,
+			);
+			path = StringInterpolation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -377,11 +391,12 @@
 			};
 			buildConfigurationList = 651C0E622C1CD2800041FDBD /* Build configuration list for PBXProject "WBChat-Homework" */;
 			compatibilityVersion = "Xcode 15.3";
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 651C0E5E2C1CD2800041FDBD;
 			productRefGroup = 651C0E682C1CD2800041FDBD /* Products */;
@@ -436,8 +451,10 @@
 				651C0E812C1CD76A0041FDBD /* VerificationView.swift in Sources */,
 				651C0E6B2C1CD2800041FDBD /* WBChat_HomeworkApp.swift in Sources */,
 				651C0E8A2C1CDB9F0041FDBD /* Router.swift in Sources */,
+				658DA0DA2C2DEFEF00CA1742 /* StringInterPolationView.swift in Sources */,
 				651C0F0D2C2335F30041FDBD /* Intents.intentdefinition in Sources */,
 				651C0E9C2C1CDF5C0041FDBD /* ContactsDetailView.swift in Sources */,
+				658DA0DC2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift in Sources */,
 				651C0E7F2C1CD7110041FDBD /* WalkthroughView.swift in Sources */,
 				651C0E872C1CDB300041FDBD /* MainTabView.swift in Sources */,
 				651C0E942C1CDD320041FDBD /* ContactsView.swift in Sources */,
