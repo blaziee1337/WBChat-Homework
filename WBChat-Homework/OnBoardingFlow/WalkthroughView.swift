@@ -67,25 +67,6 @@ struct WalkthroughView: View {
 }
 
     
-
-
-struct StartChatButton: View {
-    
-    var action: () -> Void
-    
-    var body: some View {
-        Button(action: action, label: {
-            Text("Начать общаться")
-                .foregroundColor(Color(red: 247/255, green: 257/255, blue: 247/255))
-                .font(.system(size: 16))
-                .padding()
-                .frame(width: 327, height: 52)
-                .background(RoundedRectangle(cornerRadius: 30).fill(Color("backgroundPurple")))
-        })
-    }
-}
-
-
 #Preview {
     WalkthroughView()
 }
