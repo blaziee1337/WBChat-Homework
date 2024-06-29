@@ -44,47 +44,27 @@ struct WalkthroughView: View {
     
     private var startChatButton: some View {
         Button { showVerification.toggle() }
-        label: {
-            HStack {
-                Spacer()
-                Text("Начать общаться")
-                    .foregroundColor(Color(red: 247/255, green: 257/255, blue: 247/255))
-                    .font(.system(size: 16, weight: .semibold))
-                    .padding(EdgeInsets(top: 12, leading: 48, bottom: 12, trailing: 48))
-                    
-
-                Spacer()
-            }
-            .padding(.vertical, 8)
-            .background(Color("backgroundPurple"))
-            .clipShape(RoundedRectangle(cornerRadius: 30))
-            .padding(.trailing, 24)
-            .padding(.leading, 24)
-            
-           
-        }
-    }
-}
-
-    
-
-
-struct StartChatButton: View {
-    
-    var action: () -> Void
-    
-    var body: some View {
-        Button(action: action, label: {
+    label: {
+        HStack {
+            Spacer()
             Text("Начать общаться")
                 .foregroundColor(Color(red: 247/255, green: 257/255, blue: 247/255))
-                .font(.system(size: 16))
-                .padding()
-                .frame(width: 327, height: 52)
-                .background(RoundedRectangle(cornerRadius: 30).fill(Color("backgroundPurple")))
-        })
+                .font(.system(size: 16, weight: .semibold))
+                .padding(EdgeInsets(top: 12, leading: 48, bottom: 12, trailing: 48))
+            
+            
+            Spacer()
+        }
+        .padding(.vertical, 8)
+        .background(Color("backgroundPurple"))
+        .clipShape(RoundedRectangle(cornerRadius: 30))
+        .padding(.trailing, 24)
+        .padding(.leading, 24)
+        
+        
+    }
     }
 }
-
 
 #Preview {
     WalkthroughView()
