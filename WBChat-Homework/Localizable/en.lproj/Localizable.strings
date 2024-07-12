@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  WBChat-Homework
+
+  Created by Halil Yavuz on 12.07.2024.
+  
+*/
+
+"enter_phone_number" = "Enter your phone number";
+"confirmation_code_message" = "We will send a confirmation code to the number provided";
+"continue" = "Continue";
