@@ -46,6 +46,7 @@
 		651FA3252C41657D0055D75C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 651FA3232C41657D0055D75C /* Localizable.strings */; };
 		651FA32D2C4168990055D75C /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA32C2C4168990055D75C /* Extension + String.swift */; };
 		651FA32F2C4169050055D75C /* Extension + VIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA32E2C4169050055D75C /* Extension + VIew.swift */; };
+		651FA3312C4169770055D75C /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA3302C4169770055D75C /* Country.swift */; };
 		658DA0DA2C2DEFEF00CA1742 /* StringInterPolationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */; };
 		658DA0DC2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DA0DB2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift */; };
 /* End PBXBuildFile section */
@@ -119,6 +120,7 @@
 		651FA3272C4165A40055D75C /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		651FA32C2C4168990055D75C /* Extension + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + String.swift"; sourceTree = "<group>"; };
 		651FA32E2C4169050055D75C /* Extension + VIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + VIew.swift"; sourceTree = "<group>"; };
+		651FA3302C4169770055D75C /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		658DA0B42C2B136000CA1742 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		658DA0B62C2DBCEE00CA1742 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInterPolationView.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				651C0E992C1CDEC70041FDBD /* ContactsModel.swift */,
+				651FA3302C4169770055D75C /* Country.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 				651C0E6B2C1CD2800041FDBD /* WBChat_HomeworkApp.swift in Sources */,
 				651C0E8A2C1CDB9F0041FDBD /* Router.swift in Sources */,
 				658DA0DA2C2DEFEF00CA1742 /* StringInterPolationView.swift in Sources */,
+				651FA3312C4169770055D75C /* Country.swift in Sources */,
 				651C0F0D2C2335F30041FDBD /* Intents.intentdefinition in Sources */,
 				651C0E9C2C1CDF5C0041FDBD /* ContactsDetailView.swift in Sources */,
 				658DA0DC2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift in Sources */,
