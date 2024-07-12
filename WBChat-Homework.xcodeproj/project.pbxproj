@@ -47,6 +47,7 @@
 		651FA32D2C4168990055D75C /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA32C2C4168990055D75C /* Extension + String.swift */; };
 		651FA32F2C4169050055D75C /* Extension + VIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA32E2C4169050055D75C /* Extension + VIew.swift */; };
 		651FA3312C4169770055D75C /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA3302C4169770055D75C /* Country.swift */; };
+		651FA3332C416AD50055D75C /* NumberVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA3322C416AD50055D75C /* NumberVerificationView.swift */; };
 		658DA0DA2C2DEFEF00CA1742 /* StringInterPolationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */; };
 		658DA0DC2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DA0DB2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift */; };
 /* End PBXBuildFile section */
@@ -121,6 +122,7 @@
 		651FA32C2C4168990055D75C /* Extension + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + String.swift"; sourceTree = "<group>"; };
 		651FA32E2C4169050055D75C /* Extension + VIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + VIew.swift"; sourceTree = "<group>"; };
 		651FA3302C4169770055D75C /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		651FA3322C416AD50055D75C /* NumberVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberVerificationView.swift; sourceTree = "<group>"; };
 		658DA0B42C2B136000CA1742 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		658DA0B62C2DBCEE00CA1742 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInterPolationView.swift; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 		651FA3282C4167C00055D75C /* NumberVerification */ = {
 			isa = PBXGroup;
 			children = (
+				651FA3322C416AD50055D75C /* NumberVerificationView.swift */,
 			);
 			path = NumberVerification;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				651C0E7F2C1CD7110041FDBD /* WalkthroughView.swift in Sources */,
 				651FA3132C3D86320055D75C /* InfinityScrollView.swift in Sources */,
 				651C0E872C1CDB300041FDBD /* MainTabView.swift in Sources */,
+				651FA3332C416AD50055D75C /* NumberVerificationView.swift in Sources */,
 				651C0E942C1CDD320041FDBD /* ContactsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
