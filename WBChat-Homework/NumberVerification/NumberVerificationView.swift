@@ -13,35 +13,41 @@ struct NumberVerificationView: View {
     @State private var showProgressView: Bool = false
     
     var body: some View {
-        ZStack {
-            VStack {
-                textDescription
-                HStack {
-                    countryMenu
-                    phoneNumberInput
+        NavigationStack {
+            ZStack {
+                VStack {
+                    textDescription
+                    HStack {
+                        countryMenu
+                        phoneNumberInput
+                    }
+                    .padding(.horizontal, 24)
+                    .padding(.top, 49)
+                    continueButton
                 }
-                .padding(.horizontal, 24)
-                .padding(.top, 49)
-                continueButton
-            }
-            
-            .blur(radius: showProgressView ? 5 : 0)
-            
-            if showProgressView {
-                ProgressView()
-                    .progressViewStyle(CircularProgressViewStyle())
-                    .scaleEffect(1.5, anchor: .center)
-                    .padding()
-                    .background(Color.white.opacity(0.8), in: RoundedRectangle(cornerRadius: 20))
-                    .shadow(radius: 10)
                 
+                .blur(radius: showProgressView ? 5 : 0)
+                
+                if showProgressView {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle())
+                        .scaleEffect(1.5, anchor: .center)
+                        .padding()
+                        .background(Color.white.opacity(0.8), in: RoundedRectangle(cornerRadius: 20))
+                        .shadow(radius: 10)
+                    
+                }
             }
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    BackButton()
+                }
+            }
+            .padding(.top, 169)
+            Spacer()
         }
-        
-        .padding(.top, 169)
-        Spacer()
     }
-    
+
     private var textDescription: some View {
         VStack {
             Text(NSLocalizedString("enter_phone_number", comment: ""))
