@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		651546B22C49016C00F4969B /* CodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651546B12C49016C00F4969B /* CodeVerificationView.swift */; };
 		651546B42C49053400F4969B /* RandomDigitSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651546B32C49053400F4969B /* RandomDigitSequence.swift */; };
+		651546B62C490EA500F4969B /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651546B52C490EA500F4969B /* LocalizableStrings.swift */; };
+		651546B82C49994A00F4969B /* CodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651546B72C49994A00F4969B /* CodeVerificationView.swift */; };
 		651C0E6B2C1CD2800041FDBD /* WBChat_HomeworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */; };
 		651C0E722C1CD2820041FDBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651C0E712C1CD2820041FDBD /* Preview Assets.xcassets */; };
 		651C0E7F2C1CD7110041FDBD /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E7E2C1CD7110041FDBD /* WalkthroughView.swift */; };
@@ -88,8 +89,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		651546B12C49016C00F4969B /* CodeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView.swift; sourceTree = "<group>"; };
 		651546B32C49053400F4969B /* RandomDigitSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDigitSequence.swift; sourceTree = "<group>"; };
+		651546B52C490EA500F4969B /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
+		651546B72C49994A00F4969B /* CodeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView.swift; sourceTree = "<group>"; };
 		651C0E672C1CD2800041FDBD /* WBChat-Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WBChat-Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBChat_HomeworkApp.swift; sourceTree = "<group>"; };
 		651C0E6E2C1CD2820041FDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,7 +168,7 @@
 		651546B02C49011D00F4969B /* CodeVerification */ = {
 			isa = PBXGroup;
 			children = (
-				651546B12C49016C00F4969B /* CodeVerificationView.swift */,
+				651546B72C49994A00F4969B /* CodeVerificationView.swift */,
 			);
 			path = CodeVerification;
 			sourceTree = "<group>";
@@ -334,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				651FA3232C41657D0055D75C /* Localizable.strings */,
+				651546B52C490EA500F4969B /* LocalizableStrings.swift */,
 			);
 			path = Localizable;
 			sourceTree = "<group>";
@@ -529,17 +532,18 @@
 				651C0E9A2C1CDEC70041FDBD /* ContactsModel.swift in Sources */,
 				651FA32D2C4168990055D75C /* Extension + String.swift in Sources */,
 				651C0E922C1CDCAB0041FDBD /* SettingsView.swift in Sources */,
+				651546B62C490EA500F4969B /* LocalizableStrings.swift in Sources */,
 				651FA32F2C4169050055D75C /* Extension + VIew.swift in Sources */,
 				651C0E812C1CD76A0041FDBD /* VerificationView.swift in Sources */,
 				651C0E6B2C1CD2800041FDBD /* WBChat_HomeworkApp.swift in Sources */,
 				651546B42C49053400F4969B /* RandomDigitSequence.swift in Sources */,
+				651546B82C49994A00F4969B /* CodeVerificationView.swift in Sources */,
 				651C0E8A2C1CDB9F0041FDBD /* Router.swift in Sources */,
 				658DA0DA2C2DEFEF00CA1742 /* StringInterPolationView.swift in Sources */,
 				651FA3312C4169770055D75C /* Country.swift in Sources */,
 				651C0F0D2C2335F30041FDBD /* Intents.intentdefinition in Sources */,
 				651C0E9C2C1CDF5C0041FDBD /* ContactsDetailView.swift in Sources */,
 				658DA0DC2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift in Sources */,
-				651546B22C49016C00F4969B /* CodeVerificationView.swift in Sources */,
 				651C0E7F2C1CD7110041FDBD /* WalkthroughView.swift in Sources */,
 				651FA3132C3D86320055D75C /* InfinityScrollView.swift in Sources */,
 				651C0E872C1CDB300041FDBD /* MainTabView.swift in Sources */,
