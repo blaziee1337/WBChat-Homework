@@ -9,3 +9,7 @@
 "enter_phone_number" = "Введите номер телефона";
 "confirmation_code_message" = "Мы вышлем код подтверждения \n на указанный номер";
 "continue" = "Продолжить";
+
+"enter_code" = "Введите код"
+"confirmation_code_message" = "Отправили код на номер"
+"request_code_again" = "Запросить код повторно"

@@ -9,3 +9,7 @@
 "enter_phone_number" = "Enter your phone number";
 "confirmation_code_message" = "We will send a confirmation code to the number provided";
 "continue" = "Continue";
+
+"enter_code" = "Enter the code"
+"confirmation_code_message" = "Sent the code to the number"
+"request_code_again" = "Request the code again"
