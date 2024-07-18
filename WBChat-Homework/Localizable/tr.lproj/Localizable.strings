@@ -10,6 +10,8 @@
 "confirmation_code_message" = "Doğrulama kodunu \n belirtilen numaraya göndereceğiz";
 "continue" = "Devam et";
 
-"enter_code" = "Kodu giri"
-"confirmation_code_message" = "Kodu numaraya gönderdik"
-"request_code_again" = "Kodu tekrar iste"
+"enter_code" = "Kodu giri";
+"confirmation_code_message" = "Kodu numaraya gönderdik";
+"your_code" = "Kodunuz:";
+"incorrect_code_try_again" = "Yanlış kod. Lütfen tekrar deneyin.";
+"request_code_again" = "Kodu tekrar iste";
