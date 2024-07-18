@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		651546B22C49016C00F4969B /* CodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651546B12C49016C00F4969B /* CodeVerificationView.swift */; };
 		651C0E6B2C1CD2800041FDBD /* WBChat_HomeworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */; };
 		651C0E722C1CD2820041FDBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651C0E712C1CD2820041FDBD /* Preview Assets.xcassets */; };
 		651C0E7F2C1CD7110041FDBD /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E7E2C1CD7110041FDBD /* WalkthroughView.swift */; };
@@ -86,6 +87,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		651546B12C49016C00F4969B /* CodeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView.swift; sourceTree = "<group>"; };
 		651C0E672C1CD2800041FDBD /* WBChat-Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WBChat-Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBChat_HomeworkApp.swift; sourceTree = "<group>"; };
 		651C0E6E2C1CD2820041FDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,6 +161,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		651546B02C49011D00F4969B /* CodeVerification */ = {
+			isa = PBXGroup;
+			children = (
+				651546B12C49016C00F4969B /* CodeVerificationView.swift */,
+			);
+			path = CodeVerification;
+			sourceTree = "<group>";
+		};
 		651C0E5E2C1CD2800041FDBD = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +201,7 @@
 				651C0E982C1CDE330041FDBD /* Model */,
 				651C0E7D2C1CD6BA0041FDBD /* OnBoardingFlow */,
 				651FA3282C4167C00055D75C /* NumberVerification */,
+				651546B02C49011D00F4969B /* CodeVerification */,
 				651C0E852C1CDB100041FDBD /* MainTabView */,
 				651C0E952C1CDDED0041FDBD /* Contacts */,
 				651C0E972C1CDE000041FDBD /* Chats */,
@@ -524,6 +535,7 @@
 				651C0F0D2C2335F30041FDBD /* Intents.intentdefinition in Sources */,
 				651C0E9C2C1CDF5C0041FDBD /* ContactsDetailView.swift in Sources */,
 				658DA0DC2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift in Sources */,
+				651546B22C49016C00F4969B /* CodeVerificationView.swift in Sources */,
 				651C0E7F2C1CD7110041FDBD /* WalkthroughView.swift in Sources */,
 				651FA3132C3D86320055D75C /* InfinityScrollView.swift in Sources */,
 				651C0E872C1CDB300041FDBD /* MainTabView.swift in Sources */,
