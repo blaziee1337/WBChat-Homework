@@ -11,7 +11,7 @@
 "continue" = "Продолжить";
 
 "enter_code" = "Введите код";
-"confirmation_code_message" = "Отправили код на номер";
+"sent_code_message" = "Отправили код на номер";
 "your_code" = "Ваш код:";
 "incorrect_code_try_again" = "Неправильный код. Пожалуйста, попробуйте снова.";
 "request_code_again" = "Запросить код повторно";
