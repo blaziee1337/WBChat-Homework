@@ -96,6 +96,7 @@
 		651546BE2C4ABE1100F4969B /* CustomHashString.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CustomHashString.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		651546BF2C4ABF0E00F4969B /* Set.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Set.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		651546C02C4ABFE300F4969B /* Dictionary.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dictionary.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		651546C82C4FC5C700F4969B /* UISystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UISystem; path = Modules/UISystem; sourceTree = SOURCE_ROOT; };
 		651C0E672C1CD2800041FDBD /* WBChat-Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WBChat-Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBChat_HomeworkApp.swift; sourceTree = "<group>"; };
 		651C0E6E2C1CD2820041FDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -212,6 +213,7 @@
 		651C0E692C1CD2800041FDBD /* WBChat-Homework */ = {
 			isa = PBXGroup;
 			children = (
+				651546C82C4FC5C700F4969B /* UISystem */,
 				651FA3222C4165480055D75C /* Localizable */,
 				651FA3112C3D861E0055D75C /* InfinityScroll */,
 				658DA0D82C2DEFBB00CA1742 /* StringInterpolation */,
