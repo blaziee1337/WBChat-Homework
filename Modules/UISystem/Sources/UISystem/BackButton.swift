@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-struct BackButton: View {
+public struct BackButton: View {
     @Environment(\.dismiss) private var dismiss
+    public init() {}
     
-    var body: some View {
+    public var body: some View {
         Button{
             dismiss()
             

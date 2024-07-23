@@ -10,6 +10,7 @@
 		651546B42C49053400F4969B /* RandomDigitSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651546B32C49053400F4969B /* RandomDigitSequence.swift */; };
 		651546B62C490EA500F4969B /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651546B52C490EA500F4969B /* LocalizableStrings.swift */; };
 		651546B82C49994A00F4969B /* CodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651546B72C49994A00F4969B /* CodeVerificationView.swift */; };
+		651546CA2C4FC73500F4969B /* UISystem in Frameworks */ = {isa = PBXBuildFile; productRef = 651546C92C4FC73500F4969B /* UISystem */; };
 		651C0E6B2C1CD2800041FDBD /* WBChat_HomeworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */; };
 		651C0E722C1CD2820041FDBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651C0E712C1CD2820041FDBD /* Preview Assets.xcassets */; };
 		651C0E7F2C1CD7110041FDBD /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E7E2C1CD7110041FDBD /* WalkthroughView.swift */; };
@@ -51,7 +52,6 @@
 		651FA32F2C4169050055D75C /* Extension + VIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA32E2C4169050055D75C /* Extension + VIew.swift */; };
 		651FA3312C4169770055D75C /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA3302C4169770055D75C /* Country.swift */; };
 		651FA3332C416AD50055D75C /* NumberVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA3322C416AD50055D75C /* NumberVerificationView.swift */; };
-		651FA3362C416F590055D75C /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA3352C416F580055D75C /* BackButton.swift */; };
 		658DA0DA2C2DEFEF00CA1742 /* StringInterPolationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */; };
 		658DA0DC2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DA0DB2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift */; };
 /* End PBXBuildFile section */
@@ -135,7 +135,6 @@
 		651FA32E2C4169050055D75C /* Extension + VIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + VIew.swift"; sourceTree = "<group>"; };
 		651FA3302C4169770055D75C /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		651FA3322C416AD50055D75C /* NumberVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberVerificationView.swift; sourceTree = "<group>"; };
-		651FA3352C416F580055D75C /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		658DA0B42C2B136000CA1742 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		658DA0B62C2DBCEE00CA1742 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInterPolationView.swift; sourceTree = "<group>"; };
@@ -147,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				651546CA2C4FC73500F4969B /* UISystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +227,6 @@
 				651C0E952C1CDDED0041FDBD /* Contacts */,
 				651C0E972C1CDE000041FDBD /* Chats */,
 				651C0E962C1CDDF60041FDBD /* Settings */,
-				651FA3342C416F350055D75C /* UIComponents */,
 				651FA32B2C4168660055D75C /* Extension */,
 				651C0E882C1CDB8F0041FDBD /* Services */,
 				651546BB2C4ABD5E00F4969B /* HW11 */,
@@ -376,14 +375,6 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		651FA3342C416F350055D75C /* UIComponents */ = {
-			isa = PBXGroup;
-			children = (
-				651FA3352C416F580055D75C /* BackButton.swift */,
-			);
-			path = UIComponents;
-			sourceTree = "<group>";
-		};
 		658DA0B32C2B133E00CA1742 /* Bank */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,6 +419,9 @@
 				651C0FB02C25D4240041FDBD /* PBXTargetDependency */,
 			);
 			name = "WBChat-Homework";
+			packageProductDependencies = (
+				651546C92C4FC73500F4969B /* UISystem */,
+			);
 			productName = "WBChat-Homework";
 			productReference = 651C0E672C1CD2800041FDBD /* WBChat-Homework.app */;
 			productType = "com.apple.product-type.application";
@@ -545,7 +539,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				651FA3362C416F590055D75C /* BackButton.swift in Sources */,
 				651C0E902C1CDC9E0041FDBD /* ChatsView.swift in Sources */,
 				651C0E9A2C1CDEC70041FDBD /* ContactsModel.swift in Sources */,
 				651FA32D2C4168990055D75C /* Extension + String.swift in Sources */,
@@ -955,6 +948,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		651546C92C4FC73500F4969B /* UISystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UISystem;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 651C0E5F2C1CD2800041FDBD /* Project object */;
 }
