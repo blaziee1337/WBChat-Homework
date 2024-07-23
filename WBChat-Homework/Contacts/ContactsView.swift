@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UISystem
 
 struct ContactsView: View {
     
@@ -24,7 +25,7 @@ struct ContactsView: View {
     var body: some View {
         NavigationStack(path: $path) {
             VStack(spacing: 0) {
-                searchBar
+                SearchBar(text: $text)
                     .padding(.top, 15)
                 List(contacts, id: \.self) { contact in
                     ContactRow(contact: contact)
@@ -59,24 +60,6 @@ struct ContactsView: View {
         }
         
     }
-    
-    private var searchBar: some View {
-        HStack {
-            HStack {
-                Image(systemName: "magnifyingglass")
-                    .foregroundColor(.gray)
-                    .padding(.horizontal, 6)
-                TextField("Search", text: $text)
-                    .textFieldStyle(PlainTextFieldStyle())
-                
-            }
-            .padding(8)
-            .background(Color(.systemGray6))
-            .cornerRadius(4)
-        }
-        .padding(.horizontal)
-    }
-    
     
 }
 
