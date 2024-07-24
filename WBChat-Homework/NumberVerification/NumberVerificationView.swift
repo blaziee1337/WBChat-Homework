@@ -55,10 +55,10 @@ struct NumberVerificationView: View {
 
     private var textDescription: some View {
         VStack {
-            Text(NSLocalizedString("enter_phone_number", comment: ""))
+            Text(LocalizedStrings.enterphoneNumber)
                 .font(.system(size: 24, weight: .bold))
                 .padding(.bottom, 8)
-            Text(NSLocalizedString("confirmation_code_message", comment: ""))
+            Text(LocalizedStrings.conformationCodeMessage)
                 .multilineTextAlignment(.center)
                 .padding(.bottom, 20)
         }
@@ -131,7 +131,7 @@ struct NumberVerificationView: View {
         }) {
             HStack {
                 Spacer()
-                Text(NSLocalizedString("continue", comment: ""))
+                Text(LocalizedStrings.continueButton)
                     .font(.system(size: 16))
                     .foregroundColor(.white)
                     .padding(.horizontal, 48)

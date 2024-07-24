@@ -20,17 +20,17 @@ struct WalkthroughView: View {
                 .padding(.top, 135)
                 .padding(.bottom, 42)
             
-            Text("Общайтесь с друзьями \n и близкими легко")
+            Text(LocalizedStrings.communicateWithFriends)
                 .font(.system(size: 24, weight: .bold))
                 .multilineTextAlignment(.center)
             
             Spacer()
             
-            Text("Нажимая кнопку продолжить я соглашаюсь с")
+            Text(LocalizedStrings.pressingContinueButton)
                 .font(.system(size: 10))
                 .foregroundStyle(.gray)
                 .padding(.bottom, 1)
-            Text("Политикой Конфиденциальности и Условиями Использования")
+            Text(LocalizedStrings.privacyPolicy)
                 .font(.system(size: 10))
                 .foregroundStyle(.purple)
                 .padding(.bottom, 13)
@@ -47,7 +47,7 @@ struct WalkthroughView: View {
     label: {
         HStack {
             Spacer()
-            Text("Начать общаться")
+            Text(LocalizedStrings.startChatting)
                 .foregroundColor(Color(red: 247/255, green: 257/255, blue: 247/255))
                 .font(.system(size: 16, weight: .semibold))
                 .padding(EdgeInsets(top: 12, leading: 48, bottom: 12, trailing: 48))

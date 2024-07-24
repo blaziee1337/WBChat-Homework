@@ -6,6 +6,11 @@
   
 */
 
+"communicate_with_friends" = "Communicate with friends and loved ones easily";
+"pressing_button_continue" = "By pressing the continue button, I agree to the";
+"pricacy_policy" = "Privacy Policy and Terms of Useя";
+"start_chatting" = "Start Chatting";
+
 "enter_phone_number" = "Enter your phone number";
 "confirmation_code_message" = "We will send a confirmation code to the number provided";
 "continue" = "Continue";
