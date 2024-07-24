@@ -56,7 +56,7 @@ struct NumberVerificationView: View {
             .padding(.top, 169)
             Spacer()
                 .navigationDestination(isPresented: $navigateToCodeVerification) {
-                    CodeVerificationView(phoneNumber: phoneNumber)
+                    CodeVerificationView(phoneNumber: phoneNumber, codeCountry: selectedCountry.code)
                 }
         }
         .navigationBarBackButtonHidden()
