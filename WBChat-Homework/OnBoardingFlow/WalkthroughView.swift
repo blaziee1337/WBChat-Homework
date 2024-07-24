@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UISystem
 
 struct WalkthroughView: View {
     
@@ -34,36 +35,16 @@ struct WalkthroughView: View {
                 .font(.system(size: 10))
                 .foregroundStyle(.purple)
                 .padding(.bottom, 13)
-            startChatButton
-                .padding(.bottom, 20)
-                .sheet(isPresented: $showVerification) {
-                    VerificationView()
-                }
+            WBButton(text: LocalizedStrings.startChatting,action: {
+                showVerification.toggle()
+            })
+            .padding(.bottom, 20)
+            .sheet(isPresented: $showVerification) {
+                
+            }
         }
     }
     
-    private var startChatButton: some View {
-        Button { showVerification.toggle() }
-    label: {
-        HStack {
-            Spacer()
-            Text(LocalizedStrings.startChatting)
-                .foregroundColor(Color(red: 247/255, green: 257/255, blue: 247/255))
-                .font(.system(size: 16, weight: .semibold))
-                .padding(EdgeInsets(top: 12, leading: 48, bottom: 12, trailing: 48))
-            
-            
-            Spacer()
-        }
-        .padding(.vertical, 8)
-        .background(Color("backgroundPurple"))
-        .clipShape(RoundedRectangle(cornerRadius: 30))
-        .padding(.trailing, 24)
-        .padding(.leading, 24)
-        
-        
-    }
-    }
 }
 
 #Preview {

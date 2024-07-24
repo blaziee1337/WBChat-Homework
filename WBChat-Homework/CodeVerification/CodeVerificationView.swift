@@ -26,7 +26,9 @@ struct CodeVerificationView: View {
                 codeInputView
                 generatedCodeView
                 errorView
-                requestCodeButton
+                WBButton(text: LocalizedStrings.requestCodeAgain, action: {
+                    generateVerificationCode()
+                }, backgroundColor: .clear, textColor: Color("backgroundPurple"))
             }
             .onAppear {
                 generateVerificationCode()
@@ -39,6 +41,7 @@ struct CodeVerificationView: View {
             .padding(.top, 169)
             Spacer()
         }
+        .navigationBarBackButtonHidden()
     }
     
     private var headerView: some View {
