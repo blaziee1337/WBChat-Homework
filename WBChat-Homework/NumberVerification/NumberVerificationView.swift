@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UISystem
 
 struct NumberVerificationView: View {
     @State var selectedCountry: Country
@@ -24,7 +25,15 @@ struct NumberVerificationView: View {
                     }
                     .padding(.horizontal, 24)
                     .padding(.top, 49)
-                    continueButton
+                    WBButton(text: LocalizedStrings.continueButton, action: {
+                        showProgressView = true
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                            showProgressView = false
+                            navigateToCodeVerification = true
+                        }
+                    }, backgroundColor: (isPhoneNumberValid() ? Color("backgroundPurple") : Color("backgroundPurple").opacity(0.5)), isDisabled: (!isPhoneNumberValid()))
+                    
+                    .padding(.top, 69)
                 }
                 
                 .blur(radius: showProgressView ? 5 : 0)
@@ -47,17 +56,18 @@ struct NumberVerificationView: View {
             .padding(.top, 169)
             Spacer()
                 .navigationDestination(isPresented: $navigateToCodeVerification) {
-                    CodeVerificationView(phoneNumber: phoneNumber)
+                    CodeVerificationView(phoneNumber: phoneNumber, codeCountry: selectedCountry.code)
                 }
         }
+        .navigationBarBackButtonHidden()
     }
-
+    
     private var textDescription: some View {
         VStack {
-            Text(NSLocalizedString("enter_phone_number", comment: ""))
+            Text(LocalizedStrings.enterphoneNumber)
                 .font(.system(size: 24, weight: .bold))
                 .padding(.bottom, 8)
-            Text(NSLocalizedString("confirmation_code_message", comment: ""))
+            Text(LocalizedStrings.conformationCodeMessage)
                 .multilineTextAlignment(.center)
                 .padding(.bottom, 20)
         }
@@ -119,34 +129,6 @@ struct NumberVerificationView: View {
         
     }
     
-    private var continueButton: some View {
-        Button(action: {
-            showProgressView = true
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                showProgressView = false
-                navigateToCodeVerification = true
-            }
-            
-        }) {
-            HStack {
-                Spacer()
-                Text(NSLocalizedString("continue", comment: ""))
-                    .font(.system(size: 16))
-                    .foregroundColor(.white)
-                    .padding(.horizontal, 48)
-                    .padding(.vertical, 12)
-                Spacer()
-            }
-        }
-        .padding(.vertical, 7)
-        .background(isPhoneNumberValid() ? .purple : .purple.opacity(0.5))
-        .cornerRadius(30)
-        .disabled(!isPhoneNumberValid())
-        .padding(.horizontal, 24)
-        .padding(.top, 69)
-        
-    }
-    
     private func isPhoneNumberValid() -> Bool {
         phoneNumber.filter({ $0.isNumber }).count == selectedCountry.digits
     }
@@ -154,6 +136,6 @@ struct NumberVerificationView: View {
 
 #Preview {
     NumberVerificationView(selectedCountry: .init(name: "Russia", flag: "🇷🇺", code: "+7", digits: 10))
-   
+    
     
 }

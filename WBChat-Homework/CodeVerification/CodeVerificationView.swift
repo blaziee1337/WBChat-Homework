@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UISystem
 
 struct CodeVerificationView: View {
     @State private var verificationCode = Array(repeating: "", count: 4)
@@ -15,8 +16,9 @@ struct CodeVerificationView: View {
     @State private var displayedCode: String = ""
     @FocusState private var focusedField: Int?
     
+    private let codeLength = 4
     let phoneNumber: String
-    let codeLength = 4
+    let codeCountry: String
     
     var body: some View {
         NavigationStack {
@@ -25,7 +27,9 @@ struct CodeVerificationView: View {
                 codeInputView
                 generatedCodeView
                 errorView
-                requestCodeButton
+                WBButton(text: LocalizedStrings.requestCodeAgain, action: {
+                    generateVerificationCode()
+                }, backgroundColor: .clear, textColor: Color("backgroundPurple"))
             }
             .onAppear {
                 generateVerificationCode()
@@ -38,6 +42,7 @@ struct CodeVerificationView: View {
             .padding(.top, 169)
             Spacer()
         }
+        .navigationBarBackButtonHidden()
     }
     
     private var headerView: some View {
@@ -49,9 +54,14 @@ struct CodeVerificationView: View {
                 .font(.system(size: 14))
                 .multilineTextAlignment(.center)
                 .padding(.bottom, 8)
-            Text(phoneNumber)
-                .font(.system(size: 14))
-                .padding(.bottom, 49)
+            HStack(spacing: 5) {
+                Text(codeCountry)
+                    .font(.system(size: 14))
+                Text(phoneNumber)
+                    .font(.system(size: 14))
+                
+            }
+            .padding(.bottom, 49)
         }
     }
     private var codeInputView: some View {
@@ -145,5 +155,5 @@ struct CodeVerificationView: View {
 }
 
 #Preview {
-    CodeVerificationView(phoneNumber: "+7 999 999-99-99")
+    CodeVerificationView(phoneNumber: "999 999-99-99", codeCountry: "+7")
 }

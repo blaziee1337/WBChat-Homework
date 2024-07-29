@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UISystem
 
 struct VerificationView: View {
     
@@ -14,7 +15,7 @@ struct VerificationView: View {
     var body: some View {
         VStack {
             HStack {
-                backButton
+                BackButton()
                 Spacer()
             }
             
@@ -22,18 +23,6 @@ struct VerificationView: View {
         }
     }
     
-    private var backButton: some View {
-        Button(action: {
-            presentationMode.wrappedValue.dismiss()
-            
-        }) {
-            
-            Image("backButton")
-                .resizable()
-                .frame(width: 24, height: 24)
-                .padding()
-        }
-    }
 }
 
 
