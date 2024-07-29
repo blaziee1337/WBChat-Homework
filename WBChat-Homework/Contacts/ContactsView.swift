@@ -17,8 +17,8 @@ struct ContactsView: View {
         .init(name: "Петя", phoneNumber: "+7 999 222-22-22", avatar: "petya", isOnline: true, stories: false, status: "Online"),
         .init(name: "Маман", phoneNumber: "+7 999 333-33-33", avatar: "maman", isOnline: false, stories: true, status: "Last seen 3 hours ago"),
         .init(name: "Арбуз Дыня", phoneNumber: "+7 999 444-44-44", avatar: "arbuz", isOnline: true, stories: false, status: "Online"),
-        .init(name: "Иван Иванов", phoneNumber: "+7 999 555-55-55", avatar: nil, isOnline: true, stories: false, status: "Online"),
-        .init(name: "Лиса Алиса", phoneNumber: "+7 999 666-66-66", avatar: nil, isOnline: false, stories: true, status: "Last seen 30 minutes ago")
+        .init(name: "Иван Иванов", phoneNumber: "+7 999 555-55-55", avatar: "ivan", isOnline: true, stories: false, status: "Online"),
+        .init(name: "Лиса Алиса", phoneNumber: "+7 999 666-66-66", avatar: "lisa", isOnline: false, stories: true, status: "Last seen 30 minutes ago")
         
     ]
     
@@ -64,6 +64,7 @@ struct ContactsView: View {
 }
 
 struct ContactRow: View {
+    @StateObject private var imageLoader = ImageLoader()
     let contact: Contact
     
     private let gradientStories = LinearGradient(colors: [Color(red: 210/255, green: 213/255, blue: 249/255), Color(red: 44/255, green: 55/255, blue: 255/255)], startPoint: .leading, endPoint: .trailing)
@@ -79,6 +80,11 @@ struct ContactRow: View {
                 Text(contact.status)
                     .font(.system(size: 12))
                     .foregroundStyle(Color(UIColor.systemGray2))
+            }
+        }
+        .onAppear {
+            if let avatar = contact.avatar {
+                imageLoader.loadImage(from: avatar)
             }
         }
     }
