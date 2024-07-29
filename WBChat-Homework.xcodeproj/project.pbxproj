@@ -108,6 +108,7 @@
 		651C0FD82C2601170041FDBD /* ContactEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEntry.swift; sourceTree = "<group>"; };
 		651C0FDB2C2602B20041FDBD /* TimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineProvider.swift; sourceTree = "<group>"; };
 		658DA0B42C2B136000CA1742 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		658DA0B62C2DBCEE00CA1742 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +163,7 @@
 		651C0E692C1CD2800041FDBD /* WBChat-Homework */ = {
 			isa = PBXGroup;
 			children = (
+				658DA0B52C2DBC7A00CA1742 /*  Factory */,
 				658DA0B32C2B133E00CA1742 /* Bank */,
 				651C0E982C1CDE330041FDBD /* Model */,
 				651C0E7D2C1CD6BA0041FDBD /* OnBoardingFlow */,
@@ -285,6 +287,14 @@
 				658DA0B42C2B136000CA1742 /* Bank.playground */,
 			);
 			path = Bank;
+			sourceTree = "<group>";
+		};
+		658DA0B52C2DBC7A00CA1742 /*  Factory */ = {
+			isa = PBXGroup;
+			children = (
+				658DA0B62C2DBCEE00CA1742 /* Factory.playground */,
+			);
+			path = " Factory";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
