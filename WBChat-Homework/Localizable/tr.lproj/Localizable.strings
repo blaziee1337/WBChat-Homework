@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  WBChat-Homework
+
+  Created by Halil Yavuz on 12.07.2024.
+  
+*/
+
+"communicate_with_friends" = "Arkadaşlarınız ve sevdiklerinizle kolayca iletişim kurun";
+"pressing_button_continue" = "Devam et düğmesine basarak";
+"pricacy_policy" = "Gizlilik Politikası ve Kullanım Şartlarını kabul ediyorum";
+"start_chatting" = "Sohbete başla";
+
+"enter_phone_number" = "Telefon numaranızı girin";
+"confirmation_code_message" = "Doğrulama kodunu \n belirtilen numaraya göndereceğiz";
+"continue" = "Devam et";
+
+"enter_code" = "Kodu giri";
+"confirmation_code_message" = "Kodu numaraya gönderdik";
+"your_code" = "Kodunuz:";
+"incorrect_code_try_again" = "Yanlış kod. Lütfen tekrar deneyin.";
+"request_code_again" = "Kodu tekrar iste";

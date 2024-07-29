@@ -3,22 +3,144 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		651546B42C49053400F4969B /* RandomDigitSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651546B32C49053400F4969B /* RandomDigitSequence.swift */; };
+		651546B62C490EA500F4969B /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651546B52C490EA500F4969B /* LocalizableStrings.swift */; };
+		651546B82C49994A00F4969B /* CodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651546B72C49994A00F4969B /* CodeVerificationView.swift */; };
+		651546CA2C4FC73500F4969B /* UISystem in Frameworks */ = {isa = PBXBuildFile; productRef = 651546C92C4FC73500F4969B /* UISystem */; };
+		651546E12C57FC2300F4969B /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651546E02C57FC2300F4969B /* ImageLoader.swift */; };
 		651C0E6B2C1CD2800041FDBD /* WBChat_HomeworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */; };
-		651C0E6D2C1CD2800041FDBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E6C2C1CD2800041FDBD /* ContentView.swift */; };
-		651C0E6F2C1CD2820041FDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651C0E6E2C1CD2820041FDBD /* Assets.xcassets */; };
 		651C0E722C1CD2820041FDBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651C0E712C1CD2820041FDBD /* Preview Assets.xcassets */; };
+		651C0E7F2C1CD7110041FDBD /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E7E2C1CD7110041FDBD /* WalkthroughView.swift */; };
+		651C0E812C1CD76A0041FDBD /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E802C1CD76A0041FDBD /* VerificationView.swift */; };
+		651C0E872C1CDB300041FDBD /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E862C1CDB300041FDBD /* MainTabView.swift */; };
+		651C0E8A2C1CDB9F0041FDBD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E892C1CDB9F0041FDBD /* Router.swift */; };
+		651C0E902C1CDC9E0041FDBD /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E8F2C1CDC9E0041FDBD /* ChatsView.swift */; };
+		651C0E922C1CDCAB0041FDBD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E912C1CDCAB0041FDBD /* SettingsView.swift */; };
+		651C0E942C1CDD320041FDBD /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E932C1CDD320041FDBD /* ContactsView.swift */; };
+		651C0E9A2C1CDEC70041FDBD /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E992C1CDEC70041FDBD /* ContactsModel.swift */; };
+		651C0E9C2C1CDF5C0041FDBD /* ContactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E9B2C1CDF5C0041FDBD /* ContactsDetailView.swift */; };
+		651C0E9D2C1CE06B0041FDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651C0E6E2C1CD2820041FDBD /* Assets.xcassets */; };
+		651C0EF32C2335440041FDBD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651C0EF22C2335440041FDBD /* WidgetKit.framework */; };
+		651C0EF52C2335450041FDBD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651C0EF42C2335440041FDBD /* SwiftUI.framework */; };
+		651C0EF82C2335450041FDBD /* ContactWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0EF72C2335450041FDBD /* ContactWidgetBundle.swift */; };
+		651C0EFC2C2335450041FDBD /* ContactWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0EFB2C2335450041FDBD /* ContactWidget.swift */; };
+		651C0F002C2335470041FDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651C0EFF2C2335470041FDBD /* Assets.xcassets */; };
+		651C0F042C2335470041FDBD /* ContactWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 651C0EF02C2335440041FDBD /* ContactWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		651C0F0B2C2335A00041FDBD /* ContactWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0F092C23358A0041FDBD /* ContactWidgetEntryView.swift */; };
+		651C0F0D2C2335F30041FDBD /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 651C0F0C2C2335F20041FDBD /* Intents.intentdefinition */; };
+		651C0F0E2C2336620041FDBD /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 651C0F0C2C2335F20041FDBD /* Intents.intentdefinition */; };
+		651C0F172C2338EB0041FDBD /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0F152C2338C70041FDBD /* ContactModel.swift */; };
+		651C0FAA2C25D4240041FDBD /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651C0FA92C25D4240041FDBD /* Intents.framework */; };
+		651C0FAD2C25D4240041FDBD /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0FAC2C25D4240041FDBD /* IntentHandler.swift */; };
+		651C0FB12C25D4240041FDBD /* ContactIntentExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 651C0FA82C25D4240041FDBD /* ContactIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		651C0FB52C25D6EE0041FDBD /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0FAC2C25D4240041FDBD /* IntentHandler.swift */; };
+		651C0FD42C25DB1F0041FDBD /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 651C0F0C2C2335F20041FDBD /* Intents.intentdefinition */; };
+		651C0FD52C25F7D70041FDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651C0EFF2C2335470041FDBD /* Assets.xcassets */; };
+		651C0FD62C25FF420041FDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651C0E6E2C1CD2820041FDBD /* Assets.xcassets */; };
+		651C0FD72C25FF650041FDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651C0E6E2C1CD2820041FDBD /* Assets.xcassets */; };
+		651C0FDA2C26011D0041FDBD /* ContactEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0FD82C2601170041FDBD /* ContactEntry.swift */; };
+		651C0FDD2C2602EB0041FDBD /* TimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0FDB2C2602B20041FDBD /* TimelineProvider.swift */; };
+		651C0FDE2C2603480041FDBD /* TimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0FDB2C2602B20041FDBD /* TimelineProvider.swift */; };
+		651C0FE12C26042B0041FDBD /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0F152C2338C70041FDBD /* ContactModel.swift */; };
+		651C0FE22C26046B0041FDBD /* ContactEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0FD82C2601170041FDBD /* ContactEntry.swift */; };
+		651FA3132C3D86320055D75C /* InfinityScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA3122C3D86320055D75C /* InfinityScrollView.swift */; };
+		651FA3252C41657D0055D75C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 651FA3232C41657D0055D75C /* Localizable.strings */; };
+		651FA32D2C4168990055D75C /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA32C2C4168990055D75C /* Extension + String.swift */; };
+		651FA32F2C4169050055D75C /* Extension + VIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA32E2C4169050055D75C /* Extension + VIew.swift */; };
+		651FA3312C4169770055D75C /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA3302C4169770055D75C /* Country.swift */; };
+		651FA3332C416AD50055D75C /* NumberVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA3322C416AD50055D75C /* NumberVerificationView.swift */; };
+		658DA0DA2C2DEFEF00CA1742 /* StringInterPolationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */; };
+		658DA0DC2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DA0DB2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		651C0F022C2335470041FDBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 651C0E5F2C1CD2800041FDBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 651C0EEF2C2335440041FDBD;
+			remoteInfo = ContactWidgetExtension;
+		};
+		651C0FAF2C25D4240041FDBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 651C0E5F2C1CD2800041FDBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 651C0FA72C25D4240041FDBD;
+			remoteInfo = ContactIntentExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		651C0F082C2335470041FDBD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				651C0F042C2335470041FDBD /* ContactWidgetExtension.appex in Embed Foundation Extensions */,
+				651C0FB12C25D4240041FDBD /* ContactIntentExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		651546B32C49053400F4969B /* RandomDigitSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDigitSequence.swift; sourceTree = "<group>"; };
+		651546B52C490EA500F4969B /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
+		651546B72C49994A00F4969B /* CodeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView.swift; sourceTree = "<group>"; };
+		651546BD2C4ABDC900F4969B /* HashString.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HashString.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		651546BE2C4ABE1100F4969B /* CustomHashString.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CustomHashString.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		651546BF2C4ABF0E00F4969B /* Set.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Set.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		651546C02C4ABFE300F4969B /* Dictionary.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dictionary.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		651546C82C4FC5C700F4969B /* UISystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UISystem; path = Modules/UISystem; sourceTree = SOURCE_ROOT; };
+		651546E02C57FC2300F4969B /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		651C0E672C1CD2800041FDBD /* WBChat-Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WBChat-Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBChat_HomeworkApp.swift; sourceTree = "<group>"; };
-		651C0E6C2C1CD2800041FDBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		651C0E6E2C1CD2820041FDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		651C0E712C1CD2820041FDBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		651C0E7E2C1CD7110041FDBD /* WalkthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughView.swift; sourceTree = "<group>"; };
+		651C0E802C1CD76A0041FDBD /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
+		651C0E862C1CDB300041FDBD /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		651C0E892C1CDB9F0041FDBD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		651C0E8F2C1CDC9E0041FDBD /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		651C0E912C1CDCAB0041FDBD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		651C0E932C1CDD320041FDBD /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		651C0E992C1CDEC70041FDBD /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
+		651C0E9B2C1CDF5C0041FDBD /* ContactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailView.swift; sourceTree = "<group>"; };
+		651C0EF02C2335440041FDBD /* ContactWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContactWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		651C0EF22C2335440041FDBD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		651C0EF42C2335440041FDBD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		651C0EF72C2335450041FDBD /* ContactWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactWidgetBundle.swift; sourceTree = "<group>"; };
+		651C0EFB2C2335450041FDBD /* ContactWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactWidget.swift; sourceTree = "<group>"; };
+		651C0EFF2C2335470041FDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		651C0F012C2335470041FDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		651C0F092C23358A0041FDBD /* ContactWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactWidgetEntryView.swift; sourceTree = "<group>"; };
+		651C0F0C2C2335F20041FDBD /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		651C0F0F2C23366C0041FDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		651C0F152C2338C70041FDBD /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		651C0FA82C25D4240041FDBD /* ContactIntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContactIntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		651C0FA92C25D4240041FDBD /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		651C0FAC2C25D4240041FDBD /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		651C0FAE2C25D4240041FDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		651C0FD82C2601170041FDBD /* ContactEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEntry.swift; sourceTree = "<group>"; };
+		651C0FDB2C2602B20041FDBD /* TimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineProvider.swift; sourceTree = "<group>"; };
+		651FA3122C3D86320055D75C /* InfinityScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityScrollView.swift; sourceTree = "<group>"; };
+		651FA3242C41657D0055D75C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		651FA3262C41658A0055D75C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		651FA3272C4165A40055D75C /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		651FA32C2C4168990055D75C /* Extension + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + String.swift"; sourceTree = "<group>"; };
+		651FA32E2C4169050055D75C /* Extension + VIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + VIew.swift"; sourceTree = "<group>"; };
+		651FA3302C4169770055D75C /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		651FA3322C416AD50055D75C /* NumberVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberVerificationView.swift; sourceTree = "<group>"; };
+		658DA0B42C2B136000CA1742 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		658DA0B62C2DBCEE00CA1742 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInterPolationView.swift; sourceTree = "<group>"; };
+		658DA0DB2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + StringInterPolation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,16 +148,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				651546CA2C4FC73500F4969B /* UISystem in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651C0EED2C2335440041FDBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651C0EF52C2335450041FDBD /* SwiftUI.framework in Frameworks */,
+				651C0EF32C2335440041FDBD /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651C0FA52C25D4240041FDBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651C0FAA2C25D4240041FDBD /* Intents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		651546B02C49011D00F4969B /* CodeVerification */ = {
+			isa = PBXGroup;
+			children = (
+				651546B72C49994A00F4969B /* CodeVerificationView.swift */,
+			);
+			path = CodeVerification;
+			sourceTree = "<group>";
+		};
+		651546BB2C4ABD5E00F4969B /* HW11 */ = {
+			isa = PBXGroup;
+			children = (
+				651546BD2C4ABDC900F4969B /* HashString.playground */,
+				651546BE2C4ABE1100F4969B /* CustomHashString.playground */,
+				651546BF2C4ABF0E00F4969B /* Set.playground */,
+				651546C02C4ABFE300F4969B /* Dictionary.playground */,
+			);
+			path = HW11;
+			sourceTree = "<group>";
+		};
 		651C0E5E2C1CD2800041FDBD = {
 			isa = PBXGroup;
 			children = (
 				651C0E692C1CD2800041FDBD /* WBChat-Homework */,
+				651C0EF62C2335450041FDBD /* ContactWidget */,
+				651C0FAB2C25D4240041FDBD /* ContactIntentExtension */,
+				651C0EF12C2335440041FDBD /* Frameworks */,
 				651C0E682C1CD2800041FDBD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				651C0E672C1CD2800041FDBD /* WBChat-Homework.app */,
+				651C0EF02C2335440041FDBD /* ContactWidgetExtension.appex */,
+				651C0FA82C25D4240041FDBD /* ContactIntentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,9 +215,26 @@
 		651C0E692C1CD2800041FDBD /* WBChat-Homework */ = {
 			isa = PBXGroup;
 			children = (
+				651546C82C4FC5C700F4969B /* UISystem */,
+				651FA3222C4165480055D75C /* Localizable */,
+				651FA3112C3D861E0055D75C /* InfinityScroll */,
+				658DA0D82C2DEFBB00CA1742 /* StringInterpolation */,
+				658DA0B52C2DBC7A00CA1742 /*  Factory */,
+				658DA0B32C2B133E00CA1742 /* Bank */,
+				651C0E982C1CDE330041FDBD /* Model */,
+				651C0E7D2C1CD6BA0041FDBD /* OnBoardingFlow */,
+				651FA3282C4167C00055D75C /* NumberVerification */,
+				651546B02C49011D00F4969B /* CodeVerification */,
+				651C0E852C1CDB100041FDBD /* MainTabView */,
+				651C0E952C1CDDED0041FDBD /* Contacts */,
+				651C0E972C1CDE000041FDBD /* Chats */,
+				651C0E962C1CDDF60041FDBD /* Settings */,
+				651FA32B2C4168660055D75C /* Extension */,
+				651C0E882C1CDB8F0041FDBD /* Services */,
+				651546BB2C4ABD5E00F4969B /* HW11 */,
 				651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */,
-				651C0E6C2C1CD2800041FDBD /* ContentView.swift */,
 				651C0E6E2C1CD2820041FDBD /* Assets.xcassets */,
+				651C0F0F2C23366C0041FDBD /* Info.plist */,
 				651C0E702C1CD2820041FDBD /* Preview Content */,
 			);
 			path = "WBChat-Homework";
@@ -67,6 +248,161 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		651C0E7D2C1CD6BA0041FDBD /* OnBoardingFlow */ = {
+			isa = PBXGroup;
+			children = (
+				651C0E7E2C1CD7110041FDBD /* WalkthroughView.swift */,
+				651C0E802C1CD76A0041FDBD /* VerificationView.swift */,
+			);
+			path = OnBoardingFlow;
+			sourceTree = "<group>";
+		};
+		651C0E852C1CDB100041FDBD /* MainTabView */ = {
+			isa = PBXGroup;
+			children = (
+				651C0E862C1CDB300041FDBD /* MainTabView.swift */,
+			);
+			path = MainTabView;
+			sourceTree = "<group>";
+		};
+		651C0E882C1CDB8F0041FDBD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				651C0E892C1CDB9F0041FDBD /* Router.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		651C0E952C1CDDED0041FDBD /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				651C0E932C1CDD320041FDBD /* ContactsView.swift */,
+				651C0E9B2C1CDF5C0041FDBD /* ContactsDetailView.swift */,
+				651546E02C57FC2300F4969B /* ImageLoader.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		651C0E962C1CDDF60041FDBD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				651C0E912C1CDCAB0041FDBD /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		651C0E972C1CDE000041FDBD /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				651C0E8F2C1CDC9E0041FDBD /* ChatsView.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		651C0E982C1CDE330041FDBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				651C0E992C1CDEC70041FDBD /* ContactsModel.swift */,
+				651FA3302C4169770055D75C /* Country.swift */,
+				651546B32C49053400F4969B /* RandomDigitSequence.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		651C0EF12C2335440041FDBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				651C0EF22C2335440041FDBD /* WidgetKit.framework */,
+				651C0EF42C2335440041FDBD /* SwiftUI.framework */,
+				651C0FA92C25D4240041FDBD /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		651C0EF62C2335450041FDBD /* ContactWidget */ = {
+			isa = PBXGroup;
+			children = (
+				651C0EF72C2335450041FDBD /* ContactWidgetBundle.swift */,
+				651C0FD82C2601170041FDBD /* ContactEntry.swift */,
+				651C0FDB2C2602B20041FDBD /* TimelineProvider.swift */,
+				651C0EFB2C2335450041FDBD /* ContactWidget.swift */,
+				651C0F092C23358A0041FDBD /* ContactWidgetEntryView.swift */,
+				651C0F152C2338C70041FDBD /* ContactModel.swift */,
+				651C0EFF2C2335470041FDBD /* Assets.xcassets */,
+				651C0F012C2335470041FDBD /* Info.plist */,
+				651C0F0C2C2335F20041FDBD /* Intents.intentdefinition */,
+			);
+			path = ContactWidget;
+			sourceTree = "<group>";
+		};
+		651C0FAB2C25D4240041FDBD /* ContactIntentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				651C0FAC2C25D4240041FDBD /* IntentHandler.swift */,
+				651C0FAE2C25D4240041FDBD /* Info.plist */,
+			);
+			path = ContactIntentExtension;
+			sourceTree = "<group>";
+		};
+		651FA3112C3D861E0055D75C /* InfinityScroll */ = {
+			isa = PBXGroup;
+			children = (
+				651FA3122C3D86320055D75C /* InfinityScrollView.swift */,
+			);
+			path = InfinityScroll;
+			sourceTree = "<group>";
+		};
+		651FA3222C4165480055D75C /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				651FA3232C41657D0055D75C /* Localizable.strings */,
+				651546B52C490EA500F4969B /* LocalizableStrings.swift */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		651FA3282C4167C00055D75C /* NumberVerification */ = {
+			isa = PBXGroup;
+			children = (
+				651FA3322C416AD50055D75C /* NumberVerificationView.swift */,
+			);
+			path = NumberVerification;
+			sourceTree = "<group>";
+		};
+		651FA32B2C4168660055D75C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				651FA32C2C4168990055D75C /* Extension + String.swift */,
+				651FA32E2C4169050055D75C /* Extension + VIew.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		658DA0B32C2B133E00CA1742 /* Bank */ = {
+			isa = PBXGroup;
+			children = (
+				658DA0B42C2B136000CA1742 /* Bank.playground */,
+			);
+			path = Bank;
+			sourceTree = "<group>";
+		};
+		658DA0B52C2DBC7A00CA1742 /*  Factory */ = {
+			isa = PBXGroup;
+			children = (
+				658DA0B62C2DBCEE00CA1742 /* Factory.playground */,
+			);
+			path = " Factory";
+			sourceTree = "<group>";
+		};
+		658DA0D82C2DEFBB00CA1742 /* StringInterpolation */ = {
+			isa = PBXGroup;
+			children = (
+				658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */,
+				658DA0DB2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift */,
+			);
+			path = StringInterpolation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +413,55 @@
 				651C0E632C1CD2800041FDBD /* Sources */,
 				651C0E642C1CD2800041FDBD /* Frameworks */,
 				651C0E652C1CD2800041FDBD /* Resources */,
+				651C0F082C2335470041FDBD /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				651C0F032C2335470041FDBD /* PBXTargetDependency */,
+				651C0FB02C25D4240041FDBD /* PBXTargetDependency */,
+			);
+			name = "WBChat-Homework";
+			packageProductDependencies = (
+				651546C92C4FC73500F4969B /* UISystem */,
+			);
+			productName = "WBChat-Homework";
+			productReference = 651C0E672C1CD2800041FDBD /* WBChat-Homework.app */;
+			productType = "com.apple.product-type.application";
+		};
+		651C0EEF2C2335440041FDBD /* ContactWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 651C0F052C2335470041FDBD /* Build configuration list for PBXNativeTarget "ContactWidgetExtension" */;
+			buildPhases = (
+				651C0EEC2C2335440041FDBD /* Sources */,
+				651C0EED2C2335440041FDBD /* Frameworks */,
+				651C0EEE2C2335440041FDBD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "WBChat-Homework";
-			productName = "WBChat-Homework";
-			productReference = 651C0E672C1CD2800041FDBD /* WBChat-Homework.app */;
-			productType = "com.apple.product-type.application";
+			name = ContactWidgetExtension;
+			productName = ContactWidgetExtension;
+			productReference = 651C0EF02C2335440041FDBD /* ContactWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		651C0FA72C25D4240041FDBD /* ContactIntentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 651C0FB22C25D4240041FDBD /* Build configuration list for PBXNativeTarget "ContactIntentExtension" */;
+			buildPhases = (
+				651C0FA42C25D4240041FDBD /* Sources */,
+				651C0FA52C25D4240041FDBD /* Frameworks */,
+				651C0FA62C25D4240041FDBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContactIntentExtension;
+			productName = ContactIntentExtension;
+			productReference = 651C0FA82C25D4240041FDBD /* ContactIntentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,15 +476,23 @@
 					651C0E662C1CD2800041FDBD = {
 						CreatedOnToolsVersion = 15.4;
 					};
+					651C0EEF2C2335440041FDBD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					651C0FA72C25D4240041FDBD = {
+						CreatedOnToolsVersion = 15.4;
+					};
 				};
 			};
 			buildConfigurationList = 651C0E622C1CD2800041FDBD /* Build configuration list for PBXProject "WBChat-Homework" */;
-			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			compatibilityVersion = "Xcode 15.3";
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				tr,
 			);
 			mainGroup = 651C0E5E2C1CD2800041FDBD;
 			productRefGroup = 651C0E682C1CD2800041FDBD /* Products */;
@@ -116,6 +500,8 @@
 			projectRoot = "";
 			targets = (
 				651C0E662C1CD2800041FDBD /* WBChat-Homework */,
+				651C0EEF2C2335440041FDBD /* ContactWidgetExtension */,
+				651C0FA72C25D4240041FDBD /* ContactIntentExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +511,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				651C0E9D2C1CE06B0041FDBD /* Assets.xcassets in Resources */,
+				651FA3252C41657D0055D75C /* Localizable.strings in Resources */,
 				651C0E722C1CD2820041FDBD /* Preview Assets.xcassets in Resources */,
-				651C0E6F2C1CD2820041FDBD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651C0EEE2C2335440041FDBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651C0FD72C25FF650041FDBD /* Assets.xcassets in Resources */,
+				651C0F002C2335470041FDBD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651C0FA62C25D4240041FDBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651C0FD62C25FF420041FDBD /* Assets.xcassets in Resources */,
+				651C0FD52C25F7D70041FDBD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +542,85 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				651C0E6D2C1CD2800041FDBD /* ContentView.swift in Sources */,
+				651C0E902C1CDC9E0041FDBD /* ChatsView.swift in Sources */,
+				651C0E9A2C1CDEC70041FDBD /* ContactsModel.swift in Sources */,
+				651FA32D2C4168990055D75C /* Extension + String.swift in Sources */,
+				651C0E922C1CDCAB0041FDBD /* SettingsView.swift in Sources */,
+				651546B62C490EA500F4969B /* LocalizableStrings.swift in Sources */,
+				651FA32F2C4169050055D75C /* Extension + VIew.swift in Sources */,
+				651C0E812C1CD76A0041FDBD /* VerificationView.swift in Sources */,
 				651C0E6B2C1CD2800041FDBD /* WBChat_HomeworkApp.swift in Sources */,
+				651546B42C49053400F4969B /* RandomDigitSequence.swift in Sources */,
+				651546B82C49994A00F4969B /* CodeVerificationView.swift in Sources */,
+				651C0E8A2C1CDB9F0041FDBD /* Router.swift in Sources */,
+				658DA0DA2C2DEFEF00CA1742 /* StringInterPolationView.swift in Sources */,
+				651FA3312C4169770055D75C /* Country.swift in Sources */,
+				651C0F0D2C2335F30041FDBD /* Intents.intentdefinition in Sources */,
+				651C0E9C2C1CDF5C0041FDBD /* ContactsDetailView.swift in Sources */,
+				658DA0DC2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift in Sources */,
+				651546E12C57FC2300F4969B /* ImageLoader.swift in Sources */,
+				651C0E7F2C1CD7110041FDBD /* WalkthroughView.swift in Sources */,
+				651FA3132C3D86320055D75C /* InfinityScrollView.swift in Sources */,
+				651C0E872C1CDB300041FDBD /* MainTabView.swift in Sources */,
+				651FA3332C416AD50055D75C /* NumberVerificationView.swift in Sources */,
+				651C0E942C1CDD320041FDBD /* ContactsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651C0EEC2C2335440041FDBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651C0F0E2C2336620041FDBD /* Intents.intentdefinition in Sources */,
+				651C0F0B2C2335A00041FDBD /* ContactWidgetEntryView.swift in Sources */,
+				651C0EFC2C2335450041FDBD /* ContactWidget.swift in Sources */,
+				651C0FDD2C2602EB0041FDBD /* TimelineProvider.swift in Sources */,
+				651C0F172C2338EB0041FDBD /* ContactModel.swift in Sources */,
+				651C0EF82C2335450041FDBD /* ContactWidgetBundle.swift in Sources */,
+				651C0FDA2C26011D0041FDBD /* ContactEntry.swift in Sources */,
+				651C0FB52C25D6EE0041FDBD /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651C0FA42C25D4240041FDBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651C0FDE2C2603480041FDBD /* TimelineProvider.swift in Sources */,
+				651C0FD42C25DB1F0041FDBD /* Intents.intentdefinition in Sources */,
+				651C0FE22C26046B0041FDBD /* ContactEntry.swift in Sources */,
+				651C0FAD2C25D4240041FDBD /* IntentHandler.swift in Sources */,
+				651C0FE12C26042B0041FDBD /* ContactModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		651C0F032C2335470041FDBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 651C0EEF2C2335440041FDBD /* ContactWidgetExtension */;
+			targetProxy = 651C0F022C2335470041FDBD /* PBXContainerItemProxy */;
+		};
+		651C0FB02C25D4240041FDBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 651C0FA72C25D4240041FDBD /* ContactIntentExtension */;
+			targetProxy = 651C0FAF2C25D4240041FDBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		651FA3232C41657D0055D75C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				651FA3242C41657D0055D75C /* ru */,
+				651FA3262C41658A0055D75C /* en */,
+				651FA3272C4165A40055D75C /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		651C0E732C1CD2820041FDBD /* Debug */ = {
@@ -197,7 +675,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +732,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -267,18 +745,22 @@
 		651C0E762C1CD2820041FDBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WBChat-Homework/Preview Content\"";
+				DEVELOPMENT_TEAM = N8RUQWB87H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WBChat-Homework/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,18 +777,22 @@
 		651C0E772C1CD2820041FDBD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WBChat-Homework/Preview Content\"";
+				DEVELOPMENT_TEAM = N8RUQWB87H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WBChat-Homework/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +800,112 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "halilyavuz.WBChat-Homework";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		651C0F062C2335470041FDBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N8RUQWB87H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContactWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ContactWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "halilyavuz.WBChat-Homework.ContactWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		651C0F072C2335470041FDBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N8RUQWB87H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContactWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ContactWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "halilyavuz.WBChat-Homework.ContactWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		651C0FB32C25D4240041FDBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N8RUQWB87H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContactIntentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ContactIntentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "halilyavuz.WBChat-Homework.ContactIntentExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		651C0FB42C25D4240041FDBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N8RUQWB87H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContactIntentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ContactIntentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "halilyavuz.WBChat-Homework.ContactIntentExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,7 +933,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		651C0F052C2335470041FDBD /* Build configuration list for PBXNativeTarget "ContactWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651C0F062C2335470041FDBD /* Debug */,
+				651C0F072C2335470041FDBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		651C0FB22C25D4240041FDBD /* Build configuration list for PBXNativeTarget "ContactIntentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651C0FB32C25D4240041FDBD /* Debug */,
+				651C0FB42C25D4240041FDBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		651546C92C4FC73500F4969B /* UISystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UISystem;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 651C0E5F2C1CD2800041FDBD /* Project object */;
 }
