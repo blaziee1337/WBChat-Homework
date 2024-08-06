@@ -99,6 +99,7 @@
 		651546C02C4ABFE300F4969B /* Dictionary.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dictionary.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		651546C82C4FC5C700F4969B /* UISystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UISystem; path = Modules/UISystem; sourceTree = SOURCE_ROOT; };
 		651546E02C57FC2300F4969B /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		651546F02C621E7300F4969B /* SwiftConcurrency.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftConcurrency.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		651C0E672C1CD2800041FDBD /* WBChat-Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WBChat-Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBChat_HomeworkApp.swift; sourceTree = "<group>"; };
 		651C0E6E2C1CD2820041FDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -191,6 +192,14 @@
 			path = HW11;
 			sourceTree = "<group>";
 		};
+		651546EF2C621E0A00F4969B /* HW15 */ = {
+			isa = PBXGroup;
+			children = (
+				651546F02C621E7300F4969B /* SwiftConcurrency.playground */,
+			);
+			path = HW15;
+			sourceTree = "<group>";
+		};
 		651C0E5E2C1CD2800041FDBD = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +241,7 @@
 				651FA32B2C4168660055D75C /* Extension */,
 				651C0E882C1CDB8F0041FDBD /* Services */,
 				651546BB2C4ABD5E00F4969B /* HW11 */,
+				651546EF2C621E0A00F4969B /* HW15 */,
 				651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */,
 				651C0E6E2C1CD2820041FDBD /* Assets.xcassets */,
 				651C0F0F2C23366C0041FDBD /* Info.plist */,
