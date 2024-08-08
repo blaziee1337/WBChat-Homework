@@ -20,3 +20,7 @@
 "your_code" = "Ваш код:";
 "incorrect_code_try_again" = "Неправильный код. Пожалуйста, попробуйте снова.";
 "request_code_again" = "Запросить код повторно";
+
+"minTemp" = "мин";
+"maxTemp" = "Макс";
+"weather_two_days" = "Погода на 2 дня";

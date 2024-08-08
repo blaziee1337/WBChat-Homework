@@ -55,6 +55,10 @@
 		651FA3332C416AD50055D75C /* NumberVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA3322C416AD50055D75C /* NumberVerificationView.swift */; };
 		658DA0DA2C2DEFEF00CA1742 /* StringInterPolationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */; };
 		658DA0DC2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DA0DB2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift */; };
+		659D83662C64E8A1005AF153 /* WeatherAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 659D83652C64E8A1005AF153 /* WeatherAPI */; };
+		65C98F7B2C64ED2700E54C0E /* WeatherInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F7A2C64ED2700E54C0E /* WeatherInfoViewModel.swift */; };
+		65C98F7D2C64F6C400E54C0E /* WeatherInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F7C2C64F6C400E54C0E /* WeatherInfoView.swift */; };
+		65C98F7F2C652B2A00E54C0E /* WeatherInfoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F7E2C652B2A00E54C0E /* WeatherInfoScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +146,11 @@
 		658DA0B62C2DBCEE00CA1742 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInterPolationView.swift; sourceTree = "<group>"; };
 		658DA0DB2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + StringInterPolation.swift"; sourceTree = "<group>"; };
+		659D83642C64E879005AF153 /* WeatherAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = WeatherAPI; path = Modules/WeatherAPI; sourceTree = SOURCE_ROOT; };
+		659D83672C64E8B9005AF153 /* generateWeatherapi */ = {isa = PBXFileReference; lastKnownFileType = text; path = generateWeatherapi; sourceTree = "<group>"; };
+		65C98F7A2C64ED2700E54C0E /* WeatherInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoViewModel.swift; sourceTree = "<group>"; };
+		65C98F7C2C64F6C400E54C0E /* WeatherInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoView.swift; sourceTree = "<group>"; };
+		65C98F7E2C652B2A00E54C0E /* WeatherInfoScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659D83662C64E8A1005AF153 /* WeatherAPI in Frameworks */,
 				651546CA2C4FC73500F4969B /* UISystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +217,7 @@
 				651C0EF62C2335450041FDBD /* ContactWidget */,
 				651C0FAB2C25D4240041FDBD /* ContactIntentExtension */,
 				651C0EF12C2335440041FDBD /* Frameworks */,
+				659D83672C64E8B9005AF153 /* generateWeatherapi */,
 				651C0E682C1CD2800041FDBD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -224,6 +235,7 @@
 		651C0E692C1CD2800041FDBD /* WBChat-Homework */ = {
 			isa = PBXGroup;
 			children = (
+				659D83642C64E879005AF153 /* WeatherAPI */,
 				651546C82C4FC5C700F4969B /* UISystem */,
 				651FA3222C4165480055D75C /* Localizable */,
 				651FA3112C3D861E0055D75C /* InfinityScroll */,
@@ -242,6 +254,7 @@
 				651C0E882C1CDB8F0041FDBD /* Services */,
 				651546BB2C4ABD5E00F4969B /* HW11 */,
 				651546EF2C621E0A00F4969B /* HW15 */,
+				65C98F792C64ECE800E54C0E /* Weather */,
 				651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */,
 				651C0E6E2C1CD2820041FDBD /* Assets.xcassets */,
 				651C0F0F2C23366C0041FDBD /* Info.plist */,
@@ -413,6 +426,16 @@
 			path = StringInterpolation;
 			sourceTree = "<group>";
 		};
+		65C98F792C64ECE800E54C0E /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				65C98F7A2C64ED2700E54C0E /* WeatherInfoViewModel.swift */,
+				65C98F7C2C64F6C400E54C0E /* WeatherInfoView.swift */,
+				65C98F7E2C652B2A00E54C0E /* WeatherInfoScrollView.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -434,6 +457,7 @@
 			name = "WBChat-Homework";
 			packageProductDependencies = (
 				651546C92C4FC73500F4969B /* UISystem */,
+				659D83652C64E8A1005AF153 /* WeatherAPI */,
 			);
 			productName = "WBChat-Homework";
 			productReference = 651C0E672C1CD2800041FDBD /* WBChat-Homework.app */;
@@ -567,13 +591,16 @@
 				651FA3312C4169770055D75C /* Country.swift in Sources */,
 				651C0F0D2C2335F30041FDBD /* Intents.intentdefinition in Sources */,
 				651C0E9C2C1CDF5C0041FDBD /* ContactsDetailView.swift in Sources */,
+				65C98F7F2C652B2A00E54C0E /* WeatherInfoScrollView.swift in Sources */,
 				658DA0DC2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift in Sources */,
 				651546E12C57FC2300F4969B /* ImageLoader.swift in Sources */,
 				651C0E7F2C1CD7110041FDBD /* WalkthroughView.swift in Sources */,
 				651FA3132C3D86320055D75C /* InfinityScrollView.swift in Sources */,
 				651C0E872C1CDB300041FDBD /* MainTabView.swift in Sources */,
+				65C98F7B2C64ED2700E54C0E /* WeatherInfoViewModel.swift in Sources */,
 				651FA3332C416AD50055D75C /* NumberVerificationView.swift in Sources */,
 				651C0E942C1CDD320041FDBD /* ContactsView.swift in Sources */,
+				65C98F7D2C64F6C400E54C0E /* WeatherInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -967,6 +994,10 @@
 		651546C92C4FC73500F4969B /* UISystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UISystem;
+		};
+		659D83652C64E8A1005AF153 /* WeatherAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WeatherAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

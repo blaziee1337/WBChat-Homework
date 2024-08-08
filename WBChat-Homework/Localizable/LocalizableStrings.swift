@@ -22,4 +22,8 @@ struct LocalizedStrings {
     static var yourCode: String { NSLocalizedString("your_code", comment: "") }
     static var incorrectCodeTryAgain: String { NSLocalizedString("incorrect_code_try_again", comment: "") }
     static var requestCodeAgain: String { NSLocalizedString("request_code_again", comment: "") }
+    
+    static var minTemp: String { NSLocalizedString("minTemp", comment: "")}
+    static var maxTemp: String { NSLocalizedString("maxTemp", comment: "")}
+    static var weatherForTwoDays: String { NSLocalizedString("weather_two_days", comment: "")}
 }

@@ -20,3 +20,7 @@
 "your_code" = "Your code:";
 "incorrect_code_try_again" = "Incorrect code. Please try again.";
 "request_code_again" = "Request the code again";
+
+"minTemp" = "min";
+"maxTemp" = "Max";
+"weather_two_days" = "Weather for 2 days";
