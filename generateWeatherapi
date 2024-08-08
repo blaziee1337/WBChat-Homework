@@ -1,0 +1,7 @@
+MODULE="Modules/WeatherAPI/Sources/WeatherAPI/"
+
+openapi-generator generate -i "openweather.yaml" -g swift5 -o "openweather"
+rm -r $MODULE""*
+cp -R "openweather/OpenAPIClient/Classes/OpenAPIs/". $MODULE
+rm -r "openweather"
+

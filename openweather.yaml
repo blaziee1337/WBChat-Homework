@@ -1,0 +1,225 @@
+openapi: "3.0.1"
+
+info:
+  title: "OpenWeatherMap API"
+  description: "Sample OpenWeather API."
+  version: "2.5"
+  termsOfService: "https://openweathermap.org/terms"
+  contact:
+    name: "Open Weather API"
+    url: "https://openweathermap.org/api"
+    email: "kpshinde25@gmail.com"
+  license:
+    name: "Sample License"
+    url: "https://openweathermap.org"
+
+tags:
+  - name: Forecast Data
+    description: "Get weather forecast"
+
+externalDocs:
+  description: API Documentation
+  url: https://openweathermap.org/api
+
+servers:
+  - url: "https://api.openweathermap.org/data/2.5/"
+
+security:
+  - app_id: []
+
+paths:
+  /forecast/:
+    get:
+      tags:
+        - Forecast Data
+      summary: "Get weather forecast data for one location"
+      description: "Retrieve the weather forecast"
+      operationId: DailyForecast
+      parameters:
+        - name: q
+          in: query
+          description: "City name and optionally the country code divided by comma; use ISO 3166 country codes."
+          schema:
+            type: string
+        - name: cnt
+          in: query
+          description: "Number of days to forecast (max 16 days)"
+          schema:
+            type: integer
+            default: 7
+        - name: appid
+          in: query
+          description: "API key to authorize requests"
+          schema:
+            type: string
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Forecast'
+        404:
+          description: Not found response
+          content:
+            text/plain:
+              schema:
+                title: Forecast not found
+                type: string
+                example: Not found
+
+components:
+  parameters:
+    q:
+      name: q
+      in: query
+      description: "City name and optionally the country code divided by comma; use ISO 3166 country codes."
+      schema:
+        type: string
+    cnt:
+      name: cnt
+      in: query
+      description: "Number of days to forecast (max 16 days)"
+      schema:
+        type: integer
+        default: 7
+    appid:
+      name: appid
+      in: query
+      description: "API key to authorize requests"
+      schema:
+        type: string
+
+  schemas:
+    Forecast:
+      type: object
+      properties:
+        city:
+          $ref: '#/components/schemas/City'
+        list:
+          type: array
+          items:
+            $ref: '#/components/schemas/ForecastItem'
+    
+    City:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        coord:
+          $ref: '#/components/schemas/Coord'
+        country:
+          type: string
+
+    ForecastItem:
+      type: object
+      properties:
+        dt:
+          type: integer
+        main:
+          $ref: '#/components/schemas/Main'
+        weather:
+          type: array
+          items:
+            $ref: '#/components/schemas/Weather'
+        clouds:
+          $ref: '#/components/schemas/Clouds'
+        wind:
+          $ref: '#/components/schemas/Wind'
+        rain:
+          $ref: '#/components/schemas/Rain'
+        snow:
+          $ref: '#/components/schemas/Snow'
+        sys:
+          $ref: '#/components/schemas/Sys'
+        dt_txt:
+          type: string
+
+    Coord:
+      type: object
+      properties:
+        lon:
+          type: number
+        lat:
+          type: number
+
+    Weather:
+      type: object
+      properties:
+        id:
+          type: integer
+        main:
+          type: string
+        description:
+          type: string
+        icon:
+          type: string
+
+    Main:
+      type: object
+      properties:
+        temp:
+          type: number
+        pressure:
+          type: integer
+        humidity:
+          type: integer
+        temp_min:
+          type: number
+        temp_max:
+          type: number
+        sea_level:
+          type: number
+        grnd_level:
+          type: number
+
+    Wind:
+      type: object
+      properties:
+        speed:
+          type: number
+        deg:
+          type: integer
+
+    Clouds:
+      type: object
+      properties:
+        all:
+          type: integer
+
+    Rain:
+      type: object
+      properties:
+        '3h':
+          type: number
+
+    Snow:
+      type: object
+      properties:
+        '3h':
+          type: number
+
+    Sys:
+      type: object
+      properties:
+        type:
+          type: integer
+        id:
+          type: integer
+        message:
+          type: number
+        country:
+          type: string
+        sunrise:
+          type: integer
+        sunset:
+          type: integer
+
+  securitySchemes:
+    app_id:
+      type: apiKey
+      description: API key to authorize requests.
+      name: appid
+      in: query

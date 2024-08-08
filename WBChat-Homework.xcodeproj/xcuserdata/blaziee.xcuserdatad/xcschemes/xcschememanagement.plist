@@ -44,17 +44,17 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>11</integer>
 		</dict>
 		<key>ContactIntentExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<key>ContactWidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<key>CustomHashString (Playground) 1.xcscheme</key>
 		<dict>
@@ -75,7 +75,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>7</integer>
 		</dict>
 		<key>Dictionary (Playground) 1.xcscheme</key>
 		<dict>
@@ -96,7 +96,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>4</integer>
 		</dict>
 		<key>Factory (Playground) 1.xcscheme</key>
 		<dict>
@@ -117,7 +117,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>8</integer>
 		</dict>
 		<key>HashString (Playground) 1.xcscheme</key>
 		<dict>
@@ -138,7 +138,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>9</integer>
 		</dict>
 		<key>Set (Playground) 1.xcscheme</key>
 		<dict>
@@ -159,7 +159,14 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>5</integer>
+		</dict>
+		<key>SwiftConcurrency (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 		<key>WBChat-Homework.xcscheme_^#shared#^_</key>
 		<dict>
