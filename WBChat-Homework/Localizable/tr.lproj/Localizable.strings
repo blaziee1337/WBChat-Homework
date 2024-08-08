@@ -20,3 +20,7 @@
 "your_code" = "Kodunuz:";
 "incorrect_code_try_again" = "Yanlış kod. Lütfen tekrar deneyin.";
 "request_code_again" = "Kodu tekrar iste";
+
+"minTemp" = "min";
+"maxTemp" = "Max";
+"weather_two_days" = "2 günlük hava durumu"
