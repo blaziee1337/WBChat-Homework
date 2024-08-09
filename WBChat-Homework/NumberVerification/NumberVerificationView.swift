@@ -11,6 +11,7 @@ struct NumberVerificationView: View {
     @State var selectedCountry: Country
     @State private var phoneNumber: String = ""
     @State private var showProgressView: Bool = false
+    @State private var navigateToCodeVerification: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -45,6 +46,9 @@ struct NumberVerificationView: View {
             }
             .padding(.top, 169)
             Spacer()
+                .navigationDestination(isPresented: $navigateToCodeVerification) {
+                    CodeVerificationView(phoneNumber: phoneNumber)
+                }
         }
     }
 
@@ -120,7 +124,7 @@ struct NumberVerificationView: View {
             showProgressView = true
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 showProgressView = false
-                print("next View")
+                navigateToCodeVerification = true
             }
             
         }) {

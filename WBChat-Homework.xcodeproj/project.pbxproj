@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		651546B42C49053400F4969B /* RandomDigitSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651546B32C49053400F4969B /* RandomDigitSequence.swift */; };
+		651546B62C490EA500F4969B /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651546B52C490EA500F4969B /* LocalizableStrings.swift */; };
+		651546B82C49994A00F4969B /* CodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651546B72C49994A00F4969B /* CodeVerificationView.swift */; };
 		651C0E6B2C1CD2800041FDBD /* WBChat_HomeworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */; };
 		651C0E722C1CD2820041FDBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651C0E712C1CD2820041FDBD /* Preview Assets.xcassets */; };
 		651C0E7F2C1CD7110041FDBD /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C0E7E2C1CD7110041FDBD /* WalkthroughView.swift */; };
@@ -51,6 +54,7 @@
 		651FA3362C416F590055D75C /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA3352C416F580055D75C /* BackButton.swift */; };
 		658DA0DA2C2DEFEF00CA1742 /* StringInterPolationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */; };
 		658DA0DC2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DA0DB2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift */; };
+		65C98F852C66709400E54C0E /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F842C66709400E54C0E /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +90,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		651546B32C49053400F4969B /* RandomDigitSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDigitSequence.swift; sourceTree = "<group>"; };
+		651546B52C490EA500F4969B /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
+		651546B72C49994A00F4969B /* CodeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView.swift; sourceTree = "<group>"; };
 		651C0E672C1CD2800041FDBD /* WBChat-Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WBChat-Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		651C0E6A2C1CD2800041FDBD /* WBChat_HomeworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBChat_HomeworkApp.swift; sourceTree = "<group>"; };
 		651C0E6E2C1CD2820041FDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,6 +136,7 @@
 		658DA0B62C2DBCEE00CA1742 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInterPolationView.swift; sourceTree = "<group>"; };
 		658DA0DB2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + StringInterPolation.swift"; sourceTree = "<group>"; };
+		65C98F842C66709400E54C0E /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +167,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		651546B02C49011D00F4969B /* CodeVerification */ = {
+			isa = PBXGroup;
+			children = (
+				651546B72C49994A00F4969B /* CodeVerificationView.swift */,
+			);
+			path = CodeVerification;
+			sourceTree = "<group>";
+		};
 		651C0E5E2C1CD2800041FDBD = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +207,7 @@
 				651C0E982C1CDE330041FDBD /* Model */,
 				651C0E7D2C1CD6BA0041FDBD /* OnBoardingFlow */,
 				651FA3282C4167C00055D75C /* NumberVerification */,
+				651546B02C49011D00F4969B /* CodeVerification */,
 				651C0E852C1CDB100041FDBD /* MainTabView */,
 				651C0E952C1CDDED0041FDBD /* Contacts */,
 				651C0E972C1CDE000041FDBD /* Chats */,
@@ -235,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				651C0E892C1CDB9F0041FDBD /* Router.swift */,
+				65C98F842C66709400E54C0E /* NotificationManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -269,6 +287,7 @@
 			children = (
 				651C0E992C1CDEC70041FDBD /* ContactsModel.swift */,
 				651FA3302C4169770055D75C /* Country.swift */,
+				651546B32C49053400F4969B /* RandomDigitSequence.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				651FA3232C41657D0055D75C /* Localizable.strings */,
+				651546B52C490EA500F4969B /* LocalizableStrings.swift */,
 			);
 			path = Localizable;
 			sourceTree = "<group>";
@@ -515,9 +535,12 @@
 				651C0E9A2C1CDEC70041FDBD /* ContactsModel.swift in Sources */,
 				651FA32D2C4168990055D75C /* Extension + String.swift in Sources */,
 				651C0E922C1CDCAB0041FDBD /* SettingsView.swift in Sources */,
+				651546B62C490EA500F4969B /* LocalizableStrings.swift in Sources */,
 				651FA32F2C4169050055D75C /* Extension + VIew.swift in Sources */,
 				651C0E812C1CD76A0041FDBD /* VerificationView.swift in Sources */,
 				651C0E6B2C1CD2800041FDBD /* WBChat_HomeworkApp.swift in Sources */,
+				651546B42C49053400F4969B /* RandomDigitSequence.swift in Sources */,
+				651546B82C49994A00F4969B /* CodeVerificationView.swift in Sources */,
 				651C0E8A2C1CDB9F0041FDBD /* Router.swift in Sources */,
 				658DA0DA2C2DEFEF00CA1742 /* StringInterPolationView.swift in Sources */,
 				651FA3312C4169770055D75C /* Country.swift in Sources */,
@@ -529,6 +552,7 @@
 				651C0E872C1CDB300041FDBD /* MainTabView.swift in Sources */,
 				651FA3332C416AD50055D75C /* NumberVerificationView.swift in Sources */,
 				651C0E942C1CDD320041FDBD /* ContactsView.swift in Sources */,
+				65C98F852C66709400E54C0E /* NotificationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
