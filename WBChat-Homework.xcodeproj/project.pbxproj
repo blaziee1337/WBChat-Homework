@@ -54,6 +54,7 @@
 		651FA3362C416F590055D75C /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA3352C416F580055D75C /* BackButton.swift */; };
 		658DA0DA2C2DEFEF00CA1742 /* StringInterPolationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */; };
 		658DA0DC2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DA0DB2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift */; };
+		65C98F852C66709400E54C0E /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C98F842C66709400E54C0E /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		658DA0B62C2DBCEE00CA1742 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		658DA0D92C2DEFEF00CA1742 /* StringInterPolationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInterPolationView.swift; sourceTree = "<group>"; };
 		658DA0DB2C2DF0AB00CA1742 /* Extension + StringInterPolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + StringInterPolation.swift"; sourceTree = "<group>"; };
+		65C98F842C66709400E54C0E /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				651C0E892C1CDB9F0041FDBD /* Router.swift */,
+				65C98F842C66709400E54C0E /* NotificationManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				651C0E872C1CDB300041FDBD /* MainTabView.swift in Sources */,
 				651FA3332C416AD50055D75C /* NumberVerificationView.swift in Sources */,
 				651C0E942C1CDD320041FDBD /* ContactsView.swift in Sources */,
+				65C98F852C66709400E54C0E /* NotificationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
