@@ -23,12 +23,12 @@ struct CodeVerificationView: View {
             VStack {
                 headerView
                 codeInputView
-                generatedCodeView
                 errorView
                 requestCodeButton
             }
             .onAppear {
                 generateVerificationCode()
+                NotificationManager.instance.requestAuth()
             }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
@@ -60,24 +60,46 @@ struct CodeVerificationView: View {
                 codeTextField(for: index)
                     .focused($focusedField, equals: index)
                     .onChange(of: verificationCode[index]) {
-                        if verificationCode[index].count == 1 && index < codeLength - 1 {
-                            focusedField = index + 1
-                        } else if verificationCode[index].isEmpty && index > 0 {
-                            focusedField = index - 1
-                        } else if verificationCode[index].count == 1 && index == codeLength - 1 {
-                            hideKeyboard()
-                            checkCode()
-                        }
+                        handleTextFieldChange(for: index, newValue: verificationCode[index])
+                        
                     }
             }
         }
         .padding(.horizontal, 24)
         .padding(.bottom, 25)
     }
-    private var generatedCodeView: some View {
-        Text("\(LocalizedStrings.yourCode) \(displayedCode)")
-            .padding(.bottom, 30)
+    
+    private func handleTextFieldChange(for index: Int, newValue: String) {
+        // Проверяем, что текущий текстовый поле находится в фокусе
+        guard focusedField == index else { return }
+        
+        if newValue.isEmpty {
+            // Если текущее поле пустое и это не первое поле, перемещаем фокус на предыдущее поле
+            if index > 0 {
+                focusedField = index - 1
+            }
+        } else if newValue.count > 1 {
+            // Обработка вставки нескольких символов (например, при вставке)
+            let endIndex = index + newValue.count
+            
+            if endIndex <= verificationCode.count {
+                // Распределяем дополнительные символы по массиву
+                verificationCode.replaceSubrange(index..<endIndex, with: newValue.map { String($0) })
+                // Перемещаем фокус на последний вставленный символ
+                focusedField = endIndex - 1
+            } else {
+                // Если введённое значение содержит больше одного символа, оставляем только первый символ в текущем текстовом поле.
+                verificationCode[index] = String(newValue[newValue.startIndex])
+            }
+            
+        }
+        // Если текущий индекс - последний и поле не пустое, проверяем код и скрываем клавиатуру
+        if index == verificationCode.count - 2 && newValue.count == 1 {
+            checkCode()
+            hideKeyboard()
+        }
     }
+    
     
     private var errorView: some View {
         Group {
@@ -107,6 +129,7 @@ struct CodeVerificationView: View {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             displayedCode = generatedCode
+            NotificationManager.instance.scheduleNotification(code: generatedCode)
         }
         print("Сгенерированный код: \(generatedCode)")
     }
@@ -124,6 +147,10 @@ struct CodeVerificationView: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 showError = false
                 verificationCode = Array(repeating: "", count: 4)
+                focusedField = 0
+                // Вызов клавиатуры
+                UIApplication.shared.sendAction(#selector(UIResponder.becomeFirstResponder), to: nil, from: nil, for: nil)
+                
             }
         }
     }
